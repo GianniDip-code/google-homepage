@@ -23,7 +23,15 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  color: white;
+  font-size: 13px;
+}
+
+body {
+  background-image: url(images/dandy_cinda.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ol,
@@ -65,7 +73,6 @@ ul li {
 
 .ninedots {
   max-width: 16px;
-  color: rgb(142, 209, 18);
   align-self: flex-end;
   padding-top: 8px;
   margin-left: 10px;
@@ -89,37 +96,71 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 87vh;
   flex-direction: column;
 }
 
 main {
-  position: relative;
+  text-align: center;
 }
 
 .search {
-  min-width: 350px;
+  min-width: 300px;
   width: 35rem;
   border: 1px solid rgb(218, 218, 218);
-  position: relative;
-  left: -8.5rem;
   margin: 30px 0;
   border-radius: 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.fa.fa-search {
-  color: rgb(158, 158, 158);
-  padding: 16px;
+@media all and (max-width: 500px) {
+  .search {
+    width: 25rem;
+  }
 }
 
-#site-search {
-  border: none;
+.fa.fa-search {
+  color: white;
+  padding: 24px;
 }
 
 .speaker-icon {
   width: 14px;
   align-self: center;
-  margin-right: 16px;
+  margin-right: 20px;
+}
+
+.btn {
+  border: 1px solid white;
+  background-color: #f7f9fb;
+  padding: 10px 20px;
+  margin: 0 4px 30px 4px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.btn:hover {
+  border: 1px solid rgb(15, 2, 2);
+  border-radius: 4px;
+}
+
+.klingon {
+  text-decoration: none;
+}
+
+.klingon:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  padding: 25px 0 25px 30px;
+  color: white;
+  font-size: 15px;
 }
